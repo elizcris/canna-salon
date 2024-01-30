@@ -28,9 +28,6 @@
                         <a href="#offer">Offer</a>
                     </li>
                     <li class="list-item">
-                        <a href="">Lookbook</a>
-                    </li>
-                    <li class="list-item">
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -39,7 +36,7 @@
     </header>
 
 <!--HERO-->
-    <section class="hero-container">
+    <section class="container hero">
             <h1 class="hero-title">Canna</h1>
             <p class="hero-description">We care. For you & for the environment.</p>
     </section>
@@ -51,54 +48,75 @@
                 <span class="bx bx-award"></span>
                 <h2>Expert Care</h2>
             </div>
-            <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="about-description">Our award winning salon experts have over 50 years of combined experience in the beauty industry. We do everything we can to give our customers a wonderful experience from start to finish.</p>
         </div>
         <div class="about">
             <div class="about-title">
                 <span class="bx bx-cut"></span>
                 <h2>Quality Services</h2>
             </div>
-            <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="about-description">Cut, Color, Blowout? We offer it all. Call for a free consultation and let us craft your personally curated salon experience that suits your needs.</p>
         </div>
         <div class="about">
             <div class="about-title">
                 <span class='bx bx-leaf'></span>
                 <h2>Products & Tools</h2>
             </div>
-            <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="about-description">We focus on finding companies that care about their impact on the environment in the creation and distribution of their tools and products and the ingredients used in the products you love.</p>
+            <p>Like what we used? All tools and products used in the salon are available for purchase.</p>
         </div>
     </section>
 
 <!--IMPACT-->
-    <section class="container" id="impact">
-        <div>
+    <section class="container impact" id="impact">
+        <img src="/assets/images/canna_impact.png" alt="Detailed image of leaf veins">
+        <div class="impact-description">
             <h3>Your hair. Together, our impact.</h3>
+            <p>We only use sustainably sourced products free of sulfates, GMOs, parabens, phthalates, & sulfates. All products are vegan and cruelty free. For every sale of our Canna Conditioner we donate 10% to an environmental charity of the month.</p>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      
     </section>
 
 <!--OFFER-->
-    <section class="container" id="offer">
+    <section class="container offer" id="offer">
         <h2 class="offer-title">Our Offers</h2>
         <div>
             <h3 class="offer-name">Color & Cut Offer!</h3>
-            <p class="offer-description">10% off on cut & color for returning clients.</p>
+            <p class="offer-description">10% off on cut & color for each referral.</p>
         </div>
         <div>
             <h3 class="offer-name">Your first visit?</h3>
             <p class="offer-description">20% off your first cut and style.</p>
         </div>
-        <div>
-            <a href="#contact">Contact to Book</a>
-        </div>
     </section>
 
-<!--LOOKBOOK-->
-
 <!--CONTACT-->
-    <section class="container" id="contact">
+    <section class="container contact" id="contact">
+        <h2 class="contact-title">Contact</h2>
         <p>If you would like to schedule an appointment or have any questions, please contact us below and we will get back to you within 24 hours.</p>
+        <div class="form-container">
+            <form name="contact" method="POST" data-netlify="true" class="contact-form">
+
+                <div class="contact-name-email">
+
+                    <div class="input">
+                        <label for="name" class="input-label">name:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div> 
+                    <div class="input">
+                        <label for="email" class="input-label">email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div> 
+                </div>
+
+                <div class="input">
+                    <label for="message" class="input-label">message:</label>
+                    <input type="text" name="message" id="message" required>
+                </div> 
+
+                <button type="submit" class="form-button">send message</button>
+            </form>
+        </div>
     </section>
 
 
