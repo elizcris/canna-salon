@@ -26,6 +26,7 @@ html{
 }
 
 body{
+    font-size: 1.6rem;
     font-family: var(--body-font-family);
     font-size: 1.4rem;
     line-height: 1.5;
@@ -35,8 +36,43 @@ body{
     height: 100vh;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--title-font-family);
+    letter-spacing: .01rem;
+}
+
+h1{
+    font-size: 6.4rem;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h3{
+    font-size: 2.0rem;
+}
+
+h4{
+    font-size: 1.6rem;
+}
+
+h5{
+    font-size: 1.2rem;
+}
+
+h6{
+    font-size: 0.8rem;
+}
+
+p{
+    font-family: var(--body-font-family);
+    letter-spacing: .02rem;
+    
+}
+
 a{
-    /* font-family: var(--title-font-family); */
+    font-size: 1.3rem;
     text-decoration: none;
     color: var(--dark-color)
 }
@@ -49,45 +85,9 @@ img{
 ul{
     list-style: none;
 }
-
-h1,h2,h3,h4,h5,h6{
-    font-family: var(--title-font-family);
-    padding: .3em 0;
-}
-
-h1{
-    font-size: 5rem;
-}
-
-h2{
-    font-size: 2.5rem;
-}
-
-h3{
-    font-size: 2rem;
-}
-
-h4{
-    font-size: 1rem;
-}
-
-h5{
-    font-size: .75rem;
-}
-
-h6{
-    font-size: .6rem;
-}
-
-p{
-    font-family: var(--body-font-family);
-    letter-spacing: .04rem;
-    text-align: justify;
-}
-
 /*<<<<< REUSABLE STYLES >>>>>*/
 .container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -111,13 +111,12 @@ p{
 
 .list-item{
     font-family: var(--body-font-family);
-    font-size: 1.3rem;
     font-weight: 500;
 }
 
 
 /*<<<<< HERO >>>>>*/
-.hero-container{
+.hero{
     background-image: url('/assets/images/canna_hero.jpg');
     background-size: 125%;
     background-position: right;
@@ -127,28 +126,20 @@ p{
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+    padding-bottom: .8em;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .hero-title{
     font-family: var(--title-font-family);
     text-transform: uppercase;
-    font-size: 5rem;
-    /* color: var(--emphasis-font-color);
-     */
-     color: white;
     letter-spacing: 0.5rem;
-    margin:0;
-    text-align: center;
-    /* background-color: rgba(0,0,0,0.70); */
-    /* padding: 0 100%; */
+    margin: 0;
 }
 
 .hero-description{
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    padding-bottom: 10px;
+    letter-spacing: 0.1rem;
 }
 
 /*<<<<< ABOUT >>>>>*/
@@ -160,20 +151,96 @@ p{
 
 .about-title span{
     font-size: 2.3rem;
-    padding-right: .5em;
+    padding-right: .2em;
+}
+
+.about-title, .about-title span{
+    padding-bottom: .4em;
 }
 
 .about{
-    padding-bottom: 2.3em;
+    padding: 2.3em 1em 2.3em 1em;
     border-bottom: 5px double var(--border-color)
 }
 
+.about-description{
+    text-align: justify;
+}
+/*<<<<< IMPACT >>>>>*/
+.impact{
+    padding: 2.3em 2em 2.3em 2em;
+    text-align: center;
+}
+
+.impact img{
+    border-radius: 25%;
+}
+
+.impact-description{
+    position: absolute;
+    color: var(--light-color);
+    margin-top: -20em;
+    background-color: rgb(0,0,0,0.5);
+    margin-right: 2em;
+}
 
 /*<<<<< OFFERS >>>>>*/
+.offer{
+    padding: 1.3em 2em 1.3em 2em;
+    border: 1em solid var(--border-color);
+    text-align: center;
+}
 
+.offer-title{
+    padding-bottom: .4em;
+}
 
 /*<<<<< CONTACT >>>>>*/
+.contact{
+    padding: 2.3em 2em 2.3em 2em;
+}
 
+.contact-title{
+    padding-bottom: .4em;
+}
+
+.contact .contact-title, .contact p{
+    text-align: center;
+}
+
+.contact p{
+    padding-bottom: .4em;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.input-label{
+    display: block;
+}
+
+input[type=text], input[type=email]{
+    padding: .5em 2em .5em 2em;
+    margin: .3em 0 1em 0;
+}
+
+input[name=message] {
+    padding:2em;
+    margin:.3em 0;
+}
+
+.form-button{
+    margin: 1em 5em;
+    background-color: var(--border-color);
+    color: var(--dark-color);
+    border: none;
+    padding: 1em;
+    border-radius: 5%;
+}
 
 /*<<<<< MEDIA QUERIES >>>>>*/
 @media (min-width: 475px){
