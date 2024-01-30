@@ -248,7 +248,7 @@ input[name=message] {
 
 /*<<<<< 425px >>>>>*/
 @media (min-width: 425px){
-    /*<<<<< BASE STYLES >>>>>*/
+    /*<<<<< REUSABLE STYLES >>>>>*/
     .container{
         max-width: 425px;
     }
@@ -276,9 +276,16 @@ input[name=message] {
 
 /*<<<<< 475px >>>>>*/
 @media (min-width: 475px){
-    /*<<<<< BASE STYLES >>>>>*/
+    /*<<<<< REUSABLE STYLES >>>>>*/
     .container{
         max-width: 475px;
+    }
+
+    /*<<<<< HERO >>>>>*/
+    .hero{
+    min-width: 100%;
+    min-height: 30em;
+    padding-right: 2em;
     }
 
     /*<<<<< ABOUT >>>>>*/
@@ -317,9 +324,16 @@ input[name=message] {
 
 /*<<<<< 640px >>>>>*/
 @media (min-width: 640px){
-    /*<<<<< BASE STYLES >>>>>*/
+    /*<<<<< REUSABLE STYLES >>>>>*/
     .container{
         max-width: 640px;
+    }
+
+    /*<<<<< HERO >>>>>*/
+    .hero{
+    min-width: 100%;
+    min-height: 30em;
+    padding-right: 2em;
     }
 
      /*<<<<< ABOUT >>>>>*/
@@ -378,6 +392,13 @@ input[name=message] {
         max-width: 768px;
     }
 
+    /*<<<<< HERO >>>>>*/
+    .hero{
+    min-width: 100%;
+    min-height: 30em;
+    padding-right: 2em;
+    }
+
     /*<<<<< ABOUT >>>>>*/
     .about{
     padding: 2.3em 10.6em 2.3em 10.6em;
@@ -399,6 +420,13 @@ input[name=message] {
         max-width: 1024px;
     }
 
+     /*<<<<< HERO >>>>>*/
+     .hero{
+        min-width: 100%;
+        min-height: 30em;
+        padding-right: 2em;
+     }
+
     /*<<<<< IMPACT >>>>>*/
     .impact-description h3{
         font-size: 3rem;
@@ -411,10 +439,18 @@ input[name=message] {
     a{
         font-size: 2rem;
     }
+
     /*<<<<< REUSABLE STYLES >>>>>*/
     .container{
         max-width: 1280px;
     }
+
+    /*<<<<< HERO >>>>>*/
+    .hero{
+        min-width: 100%;
+        min-height: 30em;
+        padding-right: 2em;
+     }
 
     /*<<<<< IMPACT >>>>>*/
     .impact-description h3{
