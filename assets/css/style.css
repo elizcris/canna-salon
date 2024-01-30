@@ -182,6 +182,8 @@ ul{
     margin-top: -20em;
     background-color: rgb(0,0,0,0.5);
     margin-right: 2em;
+    padding-left: .5em;
+    padding-right: .5em;
 }
 
 /*<<<<< OFFERS >>>>>*/
@@ -243,38 +245,227 @@ input[name=message] {
 }
 
 /*<<<<< MEDIA QUERIES >>>>>*/
+
+/*<<<<< 425px >>>>>*/
+@media (min-width: 425px){
+    /*<<<<< BASE STYLES >>>>>*/
+    .container{
+        max-width: 425px;
+    }
+
+    /*<<<<< ABOUT >>>>>*/
+    .about{
+        padding: 2.3em 3.6em 2.3em 3.6em;
+    }
+
+    /*<<<<< IMPACT >>>>>*/
+    .impact-description{
+        margin-top: -22em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    /*<<<<< CONTACT >>>>>*/
+    .contact{
+        padding: 2.3em 3.6em 2.3em 3.6em;
+    }
+    .contact p{
+        padding-bottom: 1em;
+    }
+}
+
+/*<<<<< 475px >>>>>*/
 @media (min-width: 475px){
+    /*<<<<< BASE STYLES >>>>>*/
     .container{
         max-width: 475px;
     }
+
+    /*<<<<< ABOUT >>>>>*/
+    .about{
+        padding: 2.3em 4.6em 2.3em 4.6em;
+    }
+
+    /*<<<<< IMPACT >>>>>*/
+    .impact{
+        display: flex;
+        flex-direction: row;
+    }
+    .impact img{
+        max-width: 50%;
+        border-radius:0%;
+        
+    }
+    .impact-description{
+        position: unset;
+        margin-top: 0em;
+        margin-right: 0; 
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: transparent;
+        color: var(--dark-color)
+    }
+
+    /*<<<<< CONTACT >>>>>*/
+    .contact{
+        padding: 2.3em 3.6em 2.3em 3.6em;
+    }
+    .contact p{
+        padding-bottom: 1em;
+    }
 }
 
+/*<<<<< 640px >>>>>*/
 @media (min-width: 640px){
+    /*<<<<< BASE STYLES >>>>>*/
     .container{
         max-width: 640px;
     }
+
+     /*<<<<< ABOUT >>>>>*/
+    .about{
+        padding: 2.3em 7.6em 2.3em 7.6em;
+    }
+
+    /*<<<<< IMPACT >>>>>*/
+    .impact{
+        display: flex;
+        flex-direction: row;
+        padding-right: 4.6em;
+        padding-left: 4.6em;
+    }
+    .impact img{
+        max-width: 45%;
+        border-radius:0%;
+        
+    }
+    .impact-description{
+        position: unset;
+        margin-top: 0em;
+        margin-right: 0; 
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: transparent;
+        color: var(--dark-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; 
+    }
+
+    /*<<<<< OFFERS >>>>>*/
+    .offer{
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+    /*<<<<< CONTACT >>>>>*/
+    .contact{
+        padding: 2.3em 6.6em 2.3em 6.6em;
+    }
+    .contact p{
+        padding-bottom: 1em;
+    }
 }
 
+/*<<<<< 768px >>>>>*/
 @media (min-width: 768px){
+    /*<<<<< BASE STYLES >>>>>*/
+    body{
+        font-size: 1.8rem;
+    }
+
+    /*<<<<< REUSABLE STYLES >>>>>*/
     .container{
         max-width: 768px;
     }
+
+    /*<<<<< ABOUT >>>>>*/
+    .about{
+    padding: 2.3em 10.6em 2.3em 10.6em;
+}
 }
 
+/*<<<<< 1024px >>>>>*/
 @media (min-width: 1024px){
+    /*<<<<< BASE STYLES >>>>>*/
+     body{
+        font-size: 2.2rem;
+    }
+    a{
+        font-size: 1.8rem;
+    }
+    
+    /*<<<<< REUSABLE STYLES >>>>>*/
     .container{
         max-width: 1024px;
     }
-}
 
-@media (min-width: 1280px){
-    .container{
-        max-width: 1280px;
+    /*<<<<< IMPACT >>>>>*/
+    .impact-description h3{
+        font-size: 3rem;
     }
 }
 
+/*<<<<< 1280px >>>>>*/
+@media (min-width: 1280px){
+    /*<<<<< BASE STYLES >>>>>*/
+    a{
+        font-size: 2rem;
+    }
+    /*<<<<< REUSABLE STYLES >>>>>*/
+    .container{
+        max-width: 1280px;
+    }
+
+    /*<<<<< IMPACT >>>>>*/
+    .impact-description h3{
+        font-size: 4rem;
+    }
+
+    .impact-description{
+        justify-content: center;
+        gap: 3em;
+    }
+}
+
+/*<<<<< 1536px >>>>>*/
 @media (min-width: 1536px){
+    /*<<<<< BASE STYLES >>>>>*/
+    a{
+        font-size: 2rem;
+    }
+
+    /*<<<<< REUSABLE STYLES >>>>>*/
     .container{
         max-width: 1536px;
+    }
+
+    /*<<<<< HEADER >>>>>*/
+    .menu-list{
+        justify-content: space-evenly;
+    }
+
+    /*<<<<< HERO >>>>>*/
+    .hero{
+       min-width: 100%;
+       min-height: 30em;
+       padding-right: 2em;
+    }
+    .hero-title{
+        font-size: 10rem;
+    }
+
+    /*<<<<< ABOUT >>>>>*/
+    .about{
+        padding: 2.3em 14em 2.3em 14em;
+    }
+
+    /*<<<<< IMPACT >>>>>*/
+    .impact-description h3{
+        font-size: 3rem;
+    }
+
+      /*<<<<< CONTACT >>>>>*/
+      .contact{
+        padding: 2.3em 12em 2.3em 12em;
     }
 }
